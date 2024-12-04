@@ -1,3 +1,3 @@
 config BOARD_FILCO87
-    bool "filco87"
+    bool "filco8711"
     depends on SOC_NRF52840_QIAA
