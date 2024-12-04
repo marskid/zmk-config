@@ -5,7 +5,7 @@
 if BOARD_FILCO87
 
 config ZMK_KEYBOARD_NAME
-    default "filco8711"
+    default "filco87"
 
 if USB
 
