@@ -21,4 +21,4 @@
 include:
   - board: filco87
     snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n -DCONFIG_ZMK_STUDIO_LOCK_ON_DISCONNECT=n
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
