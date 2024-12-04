@@ -38,13 +38,32 @@
         // Replace these comments with the GPIO pins in the matrix.
         // See https://zmk.dev/docs/development/hardware-integration/new-shield#shield-overlays
         col-gpios
-            = <&gpio1 4 GPIO_ACTIVE_HIGH>
+            = <&gpio0 6 GPIO_ACTIVE_HIGH>
+            , <&gpio0 8 GPIO_ACTIVE_HIGH>
+            , <&gpio0 17 GPIO_ACTIVE_HIGH>
+            , <&gpio0 20 GPIO_ACTIVE_HIGH>
+            , <&gpio0 22 GPIO_ACTIVE_HIGH>
+            , <&gpio0 24 GPIO_ACTIVE_HIGH>
+            , <&gpio1 0 GPIO_ACTIVE_HIGH>
+            , <&gpio0 11 GPIO_ACTIVE_HIGH>
+            , <&gpio1 4 GPIO_ACTIVE_HIGH>
             , <&gpio1 6 GPIO_ACTIVE_HIGH>
+            , <&gpio0 9 GPIO_ACTIVE_HIGH>
+            , <&gpio0 10 GPIO_ACTIVE_HIGH>
+            , <&gpio1 11 GPIO_ACTIVE_HIGH>
+            , <&gpio1 13 GPIO_ACTIVE_HIGH>
+            , <&gpio1 15 GPIO_ACTIVE_HIGH>
             ;
 
         row-gpios
-            = <&gpio0 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&gpio0 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            = <&gpio0 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&gpio0 29 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&gpio0 31 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&gpio1 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&gpio1 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&gpio1 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&gpio0 12 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&gpio0 26 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             ;
     };
 
@@ -67,20 +86,18 @@
         >;
     };
 
-    filco87_position_map {
+    filco87_layout_map {
         compatible = "zmk,physical-layout-position-map";
         complete;
-        filco87_map {
+        filco87_layout {
             physical-layout = <&filco87_layout>;
             positions
-                = <35 40 41 42 36 43 14 15 34 37>  
-                ,<69 85 86 12  82 73 80 68 84>
-                ,<65 70 79 71 72 66 76 64 67 48>
-                ,<18 23 10 24 25 19 26 13 5 17 20 49 74>
-                ,<1 22 48 30 9 28 8 2 27 83 16 21 32 31>
-                ,<52 57 46 58 59 53 60 81 51 54>
-                ,<56 79 11 6 4 61 78 0 55 75>
-                ,<50 39 29 45 7 3 44 77 33 38 63>
+                = = <35 40 41 42 36 43 14 15 34 37 69 85 86 12 82 73>
+                , <80 68 84 65 70 62 71 72 66 76 64 67 48 18 23 10>
+                , <24 25 19 26 13  5 17 20 49 74  1 22 47 30  9 28>
+                , < 8  2 27 83 16 21 32 31 52 57 46 58 59 53 60 81>
+                , <51 54 56 79 11  6  4 61 78  0 55 75 50 39 29 45>
+                , < 7  3 44 77 33 38 63>
                 ;
         };
     };
