@@ -19,5 +19,5 @@
 #
 ---
 include:
-  - board: nice_nano_v2
-    shield: contra
+  - board: filco87
+    snippet: ["zmk-usb-logging", "studio-rpc-usb-uart"]
