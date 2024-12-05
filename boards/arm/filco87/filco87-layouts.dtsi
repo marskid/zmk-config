@@ -7,8 +7,6 @@
     filco87_layout1: filco87_layout1 {
         compatible = "zmk,physical-layout";
         display-name = "filco87_1";
-        transform = <&filco87_transform>;
-        kscan = <&kscan>;
 
         // Edit this to define the positions and sizes of the keys, or remove it
         // if your keyboard will not support ZMK Studio.
@@ -107,8 +105,6 @@
     filco87_layout2: filco87_layout2 {
         compatible = "zmk,physical-layout";
         display-name = "filco87_2";
-        transform = <&filco87_transform>;
-        kscan = <&kscan>;
 
         // Edit this to define the positions and sizes of the keys, or remove it
         // if your keyboard will not support ZMK Studio.

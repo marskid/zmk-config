@@ -22,7 +22,11 @@
         // Uncomment this if you enabled one of the "vddh" nodes below.
         // zmk,battery = &vbatt;
         zmk,physical-layout = &filco87_layout1;
-        zmk,matrix-transform = &filco87_transform;
+    };
+
+    &filco87_layout1 {
+        kscan = <&kscan>;
+        transform = <&filco87_transform>;
     };
 
     kscan: kscan {
