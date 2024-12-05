@@ -207,7 +207,7 @@
     filco87_position_map: filco87_position_map {
         compatible = "zmk,physical-layout-position-map";
         complete;
-        filco87_layout1: filco87_layout1 {
+        filco87_layout_map1: filco87_layout_map1 {
             physical-layout = <&filco87_layout1>;
             positions
                 = <35 40 41 42 36 43 14 15 34 37 69 85 86 12 82 73>
@@ -218,7 +218,7 @@
                 , < 7  3 44 77 33 38 63>
                 ;
         };
-        filco87_layout2: filco87_layout2 {
+        filco87_layout_map2: filco87_layout_map2 {
             physical-layout = <&filco87_layout2>;
             positions
                 = <63 40 41 42 36 43 14 15 34 37 69 85 86 12 82 73>
