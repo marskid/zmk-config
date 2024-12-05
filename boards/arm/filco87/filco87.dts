@@ -116,11 +116,6 @@
     // };
 };
 
-&filco87_layout1 {
-    kscan = <&kscan>;
-    transform = <&filco87_transform>;
-};
-
 &adc {
     status = "okay";
 };
