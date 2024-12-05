@@ -21,7 +21,7 @@
         zephyr,flash = &flash0;
         // Uncomment this if you enabled one of the "vddh" nodes below.
         // zmk,battery = &vbatt;
-        zmk,physical-layout = &filco87_layout1;
+        zmk,physical-layout = &filco87_layout_map1;
     };
 
     kscan: kscan {
