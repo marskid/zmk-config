@@ -40,7 +40,8 @@
             &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
             &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
             >;
-        }
+        };
+
         raise_layer {
             display-name = "raise_layer";
             bindings = <
@@ -51,6 +52,6 @@
             &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
             &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
             >;
-        }
+        };
     };
 };
