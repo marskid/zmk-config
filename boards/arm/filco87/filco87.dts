@@ -24,11 +24,6 @@
         zmk,physical-layout = &filco87_layout1;
     };
 
-    &filco87_layout1 {
-        kscan = <&kscan>;
-        transform = <&filco87_transform>;
-    };
-
     kscan: kscan {
         // If the hardware does not use a switch matrix, change this to the
         // appropriate driver and update the properties below to match.
@@ -119,6 +114,11 @@
     //     output-ohms = <2000000>;
     //     full-ohms = <(2000000 + 806000)>;
     // };
+};
+
+&filco87_layout1 {
+    kscan = <&kscan>;
+    transform = <&filco87_transform>;
 };
 
 &adc {
