@@ -7,7 +7,7 @@
     filco87_layout: filco87_layout {
         compatible = "zmk,physical-layout";
         display-name = "filco87";
-        transform = <&default_transform>;
+        transform = <&filco87_transform>;
         kscan = <&kscan>;
 
         // Edit this to define the positions and sizes of the keys, or remove it

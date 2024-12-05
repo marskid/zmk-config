@@ -67,7 +67,7 @@
             ;
     };
 
-    default_transform: default_transform {
+    filco87_transform: matrix_transform {
         // See https://zmk.dev/docs/development/hardware-integration/new-shield#matrix-transform
         // for how to configure this
         compatible = "zmk,matrix-transform";
