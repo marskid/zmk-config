@@ -89,9 +89,9 @@
 
         // If you have a GPIO routed to a status LED, set it here.
         // Otherwise, delete this block.
-        blue_led: led_0 {
-            gpios = <&gpio0 15 GPIO_ACTIVE_HIGH>;
-        };
+        //blue_led: led_0 {
+        //    gpios = <&gpio0 15 GPIO_ACTIVE_HIGH>;
+        //};
     };
 
     // If you are powering the SoC from the VDDH pin, uncomment this block.
