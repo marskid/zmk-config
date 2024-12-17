@@ -38,32 +38,32 @@
         // Replace these comments with the GPIO pins in the matrix.
         // See https://zmk.dev/docs/development/hardware-integration/new-shield#shield-overlays
         col-gpios
-            = <&gpio1  6 GPIO_ACTIVE_HIGH> //0
-            , <&gpio1  2 GPIO_ACTIVE_HIGH> //1
-            , <&gpio1  0 GPIO_ACTIVE_HIGH> //2
-            , <&gpio0 22 GPIO_ACTIVE_HIGH> //3
-            , <&gpio0 20 GPIO_ACTIVE_HIGH> //4
-            , <&gpio0 17 GPIO_ACTIVE_HIGH> //5
-            , <&gpio0 15 GPIO_ACTIVE_HIGH> //6
-            , <&gpio0 10 GPIO_ACTIVE_HIGH> //7
-            , <&gpio0  9 GPIO_ACTIVE_HIGH> //8
-            , <&gpio0 24 GPIO_ACTIVE_HIGH> //9
-            , <&gpio0 13 GPIO_ACTIVE_HIGH> //10
-            , <&gpio1 11 GPIO_ACTIVE_HIGH> //11
-            , <&gpio0  3 GPIO_ACTIVE_HIGH> //12
-            , <&gpio0 30 GPIO_ACTIVE_HIGH> //13
-            , <&gpio0  7 GPIO_ACTIVE_HIGH> //14
+            = <&gpio1  6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> //0
+            , <&gpio1  2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> //1
+            , <&gpio1  0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> //2
+            , <&gpio0 22 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> //3
+            , <&gpio0 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> //4
+            , <&gpio0 17 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> //5
+            , <&gpio0 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> //6
+            , <&gpio0 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> //7
+            , <&gpio0  9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> //8
+            , <&gpio0 24 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> //9
+            , <&gpio0 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> //10
+            , <&gpio1 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> //11
+            , <&gpio0  3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> //12
+            , <&gpio0 30 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> //13
+            , <&gpio0  7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> //14
             ;
 
         row-gpios
-            = <&gpio1  4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> //0
-            , <&gpio0 28 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> //1
-            , <&gpio1 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> //2
-            , <&gpio0  2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> //3
-            , <&gpio0 29 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> //4
-            , <&gpio0 31 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> //5
-            , <&gpio0  6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> //6
-            , <&gpio0  8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> //7
+            = <&gpio1  4 GPIO_ACTIVE_HIGH> //0
+            , <&gpio0 28 GPIO_ACTIVE_HIGH> //1
+            , <&gpio1 13 GPIO_ACTIVE_HIGH> //2
+            , <&gpio0  2 GPIO_ACTIVE_HIGH> //3
+            , <&gpio0 29 GPIO_ACTIVE_HIGH> //4
+            , <&gpio0 31 GPIO_ACTIVE_HIGH> //5
+            , <&gpio0  6 GPIO_ACTIVE_HIGH> //6
+            , <&gpio0  8 GPIO_ACTIVE_HIGH> //7
             ;
     };
 
