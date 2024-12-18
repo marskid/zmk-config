@@ -68,7 +68,7 @@
             display-name = "fn_layer";
             bindings = <
             &bt BT_CLR &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &bootloader &trans &trans &trans 
-            &trans &bt_to 0 OUT_BLE &bt_to 1 OUT_BLE &bt_to 2 OUT_BLE &to_bt 3 OUT_BLE &out OUT_USB &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
+            &trans &bt_to 0 OUT_BLE &bt_to 1 OUT_BLE &bt_to 2 OUT_BLE &bt_to 3 OUT_BLE &out OUT_USB &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
             &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
             &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
             &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
