@@ -14,7 +14,7 @@
     combos {
         compatible = "zmk,combos";
         combo_ctrl {
-            timeout-ms = <500>;
+            timeout-ms = <50>;
             key-positions = <76 78 82>;
             bindings = <&sl 1>;
         };
