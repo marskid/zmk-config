@@ -20,9 +20,7 @@
             require-prior-idle-ms = <500>;
             key-positions = <76 78 82>;
             bindings
-                = <&bl BL_SET 1>
-                , <&macro_wait_time 500>
-                , <&sl 1>
+                = <&sl 1>
                 ;
         };
     };
