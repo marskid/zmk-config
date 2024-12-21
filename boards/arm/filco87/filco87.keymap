@@ -20,8 +20,9 @@
             require-prior-idle-ms = <500>;
             key-positions = <76 78 82>;
             bindings
-                = <&sl 1>
-                , <&bl BL_SET 1>;
+                = <&bl BL_SET 1>
+                , <&sl 1>
+                ;
         };
     };
 };
@@ -33,11 +34,12 @@
             compatible = "zmk,behavior-macro-two-param";
             #binding-cells = <2>;
             bindings
-                = <&macro_param_1to2>
+                = <&bl BL_SET 0>
+                , <&macro_param_1to2>
                 , <&bt BT_SEL MACRO_PLACEHOLDER>
                 , <&macro_param_2to1>
                 , <&out MACRO_PLACEHOLDER>
-                , <&bl BL_SET 0>;
+                ;
         };
     };
 };
