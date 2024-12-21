@@ -20,7 +20,22 @@
             require-prior-idle-ms = <500>;
             key-positions = <76 78 82>;
             bindings
-                = <&sl 1>
+                = <&ctrl_alt_fn>
+                ;
+        };
+    };
+};
+
+/ {
+    macros {
+        ctrl_alt_fn: ctrl_alt_fn {
+            label = "ctrl_alt_fn";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&bl BL_SET 1>
+                , <&macro_wait_time 500>
+                , <&sl 1>
                 ;
         };
     };
