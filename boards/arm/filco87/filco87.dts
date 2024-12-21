@@ -99,6 +99,10 @@
      };
 };
 
+&leds {
+    compatible = "gpio-leds";
+}
+
 &filco87_layout1 {
     kscan = <&kscan>;
     transform = <&filco87_transform>;
