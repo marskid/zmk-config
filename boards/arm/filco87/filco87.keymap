@@ -21,6 +21,7 @@
             key-positions = <76 78 82>;
             bindings
                 = <&bl BL_SET 1>
+                , <&macro_wait_time 500>
                 , <&sl 1>
                 ;
         };
@@ -35,6 +36,7 @@
             #binding-cells = <2>;
             bindings
                 = <&bl BL_SET 0>
+                , <&macro_wait_time 500>
                 , <&macro_param_1to2>
                 , <&bt BT_SEL MACRO_PLACEHOLDER>
                 , <&macro_param_2to1>
