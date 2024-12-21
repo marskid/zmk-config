@@ -21,7 +21,6 @@
             key-positions = <76 78 82>;
             bindings
                 = <&sl 1>
-                , <&bl BL_ON>
                 , <&bl BL_SET 100>;
         };
     };
@@ -38,7 +37,7 @@
                 , <&bt BT_SEL MACRO_PLACEHOLDER>
                 , <&macro_param_2to1>
                 , <&out MACRO_PLACEHOLDER>
-                , <&bl BL_OFF>;
+                , <&bl BL_SET 0>;
         };
     };
 };
