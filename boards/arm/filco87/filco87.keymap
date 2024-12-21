@@ -21,7 +21,8 @@
             key-positions = <76 78 82>;
             bindings
                 = <&sl 1>
-                , <&bl BL_ON>;
+                , <&bl BL_ON>
+                , <&bl BL_SET 100>;
         };
     };
 };
