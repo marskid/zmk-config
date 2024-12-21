@@ -19,9 +19,7 @@
             timeout-ms = <1000>;
             require-prior-idle-ms = <500>;
             key-positions = <76 78 82>;
-            bindings
-                = <&ctrl_alt_fn>
-                ;
+            bindings = <&ctrl_alt_fn>;
         };
     };
 };
@@ -33,8 +31,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&bl BL_SET 1>
-                , <&macro_wait_time 500>
+                = <&bl BL_SET 100>
                 , <&sl 1>
                 ;
         };
@@ -49,7 +46,6 @@
             #binding-cells = <2>;
             bindings
                 = <&bl BL_SET 0>
-                , <&macro_wait_time 500>
                 , <&macro_param_1to2>
                 , <&bt BT_SEL MACRO_PLACEHOLDER>
                 , <&macro_param_2to1>
