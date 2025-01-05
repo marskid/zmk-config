@@ -70,6 +70,17 @@
 };
 
 / {
+    macros {
+        ctrl_clr: ctrl_clr {
+            label = "ctrl_clr";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bl BL_SET 0>;
+        };
+    };
+};
+
+/ {
     // Define a default keymap here.
     // See https://zmk.dev/docs/development/hardware-integration/new-shield#default-keymap.
     keymap {
@@ -98,12 +109,12 @@
         ctrl_layer {
             display-name = "fn_layer";
             bindings = <
-            &bt_clr &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &bootloader &trans &trans &trans 
-            &trans &bt_to 0 OUT_BLE &bt_to 1 OUT_BLE &bt_to 2 OUT_BLE &bt_to 3 OUT_BLE &bt_to 4 OUT_USB &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
-            &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
-            &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
-            &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
-            &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
+            &bt_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &bootloader &ctrl_clr &ctrl_clr &ctrl_clr 
+            &ctrl_clr &bt_to 0 OUT_BLE &bt_to 1 OUT_BLE &bt_to 2 OUT_BLE &bt_to 3 OUT_BLE &bt_to 4 OUT_USB &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr 
+            &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr 
+            &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr 
+            &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr 
+            &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr 
             >;
         };
 
