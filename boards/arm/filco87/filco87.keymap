@@ -15,9 +15,7 @@
     combos {
         compatible = "zmk,combos";
         combo_ctrl {
-            slow-release;
-            timeout-ms = <1000>;
-            require-prior-idle-ms = <500>;
+            timeout-ms = <50>;
             key-positions = <76 78 82>;
             bindings = <&ctrl_alt_fn>;
         };
