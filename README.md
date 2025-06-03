@@ -1,6 +1,6 @@
 ### 改装升级Filco 87双模蓝牙键盘方案
 
-[说明文档](https://dzone.dynv6.net:8443/1748566759393)
+[说明文档](https://blog.dzone.ip-ddns.com/1748566759393)
 
 矩阵图
 
