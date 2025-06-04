@@ -36,8 +36,8 @@
         raise_layer {
             display-name = "raise_layer";
             bindings = <
-            &BT_CLR &C_VOL_UP &C_VOL_DN &C_MUTE &trans &C_RW &C_PP &C_STOP &C_FF &trans &trans &trans &bootloader &kp SYSREQ &trans &trans 
-            &trans &BT_SEL 0 &BT_SEL 1 &BT_SEL 2 &BT_SEL 3 &OUT_TOG &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
+            &bt BT_CLR &kp C_VOL_UP &kp C_VOL_DN &kp C_MUTE &trans &kp C_RW &kp C_PP &kp C_STOP &kp C_FF &trans &trans &trans &bootloader &kp SYSREQ &trans &trans 
+            &trans &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &out OUT_TOG &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
             &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
             &trans &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans &trans &trans &trans &trans &trans &trans 
             &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
