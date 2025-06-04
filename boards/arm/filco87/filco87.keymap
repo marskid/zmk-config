@@ -7,77 +7,6 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/backlight.h>
 
-&sl {
-    release-after-ms = <5000>;
-};
-
-/ {
-    combos {
-        compatible = "zmk,combos";
-        combo_ctrl {
-            timeout-ms = <50>;
-            key-positions = <76 78 82>;
-            bindings = <&ctrl_alt_fn>;
-        };
-    };
-};
-
-/ {
-    macros {
-        ctrl_alt_fn: ctrl_alt_fn {
-            label = "ctrl_alt_fn";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&bl BL_SET 100>
-                , <&sl 1>
-                ;
-        };
-    };
-};
-
-/ {
-    macros {
-        bt_to: bt_to {
-            label = "bt_to";
-            compatible = "zmk,behavior-macro-two-param";
-            #binding-cells = <2>;
-            bindings
-                = <&bl BL_SET 0>
-                , <&macro_param_1to2>
-                , <&bt BT_SEL MACRO_PLACEHOLDER>
-                , <&macro_param_2to1>
-                , <&out MACRO_PLACEHOLDER>
-                ;
-        };
-    };
-};
-
-/ {
-    macros {
-        bt_clr: bt_clr {
-            label = "bt_clr";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&bl BL_SET 0>
-                , <&bt BT_CLR>
-                ;
-        };
-    };
-};
-
-/ {
-    macros {
-        ctrl_clr: ctrl_clr {
-            label = "ctrl_clr";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&bl BL_SET 0>;
-        };
-    };
-};
-
 / {
     // Define a default keymap here.
     // See https://zmk.dev/docs/development/hardware-integration/new-shield#default-keymap.
@@ -100,27 +29,15 @@
             &kp TAB  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp   I   &kp  O  &kp   P  &kp LBKT &kp RBKT  &kp BSLH   &kp  DEL  &kp END  &kp PG_DN
             &kp CLCK  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp   K   &kp  L  &kp SEMI &kp SQT           &kp RET
             &kp LSHFT  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA &kp DOT &kp FSLH           &kp RSHFT                  &kp UP
-            &kp LCTRL &kp LGUI &kp LALT               &kp SPACE                 &kp  RALT  &kp  RGUI &mo 2  &kp  RCTRL         &kp LEFT  &kp DOWN &kp RIGHT
-            >;
-        };
-
-        ctrl_layer {
-            display-name = "fn_layer";
-            bindings = <
-            &bt_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &bootloader &ctrl_clr &ctrl_clr &ctrl_clr 
-            &ctrl_clr &bt_to 0 OUT_BLE &bt_to 1 OUT_BLE &bt_to 2 OUT_BLE &bt_to 3 OUT_BLE &bt_to 4 OUT_USB &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr 
-            &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr 
-            &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr 
-            &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr 
-            &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr &ctrl_clr 
+            &kp LCTRL &kp LGUI &kp LALT               &kp SPACE                 &kp  RALT  &kp  RGUI &mo 1  &kp  RCTRL         &kp LEFT  &kp DOWN &kp RIGHT
             >;
         };
 
         raise_layer {
             display-name = "raise_layer";
             bindings = <
-            &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &kp SYSREQ &trans &trans 
-            &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
+            &BT_CLR &C_VOL_UP &C_VOL_DN &C_MUTE &trans &C_RW &C_PP &C_STOP &C_FF &trans &trans &trans &bootloader &kp SYSREQ &trans &trans 
+            &trans &BT_SEL 0 &BT_SEL 1 &BT_SEL 2 &BT_SEL 3 &OUT_TOG &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
             &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
             &trans &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans &trans &trans &trans &trans &trans &trans 
             &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
